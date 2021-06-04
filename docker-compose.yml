@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: "Dockerfile.dev"
-    command: python main.py
+    command: ['python main.py']
     volumes:
       - .:/app
       - python-packages:/root/.local/share
